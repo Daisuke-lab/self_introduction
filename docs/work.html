@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h3>My Personal Project</h3>
+<div class="container">
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Screenshot (51).png' %}">
+        <div class="card-body">
+    <h5 class="card-title">Craigslit clone with Django</h5>
+    <p class="card-text">You can search anything and see what real Craigslist has.</p>
+    <a href="#" class="btn btn-primary">Check the code</a>
+  </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+   <img class="card-img-top" src="{% static 'img/Screenshot (52).png' %}">
+        <div class="card-body">
+    <h5 class="card-title">Image classification with Keras</h5>
+    <p class="card-text">I created the model to classify 6 pictures from scratch with keras. It has more
+    than 95% accuracy</p>
+    <a href="#" class="btn btn-primary">Check the code</a>
+  </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Screenshot (53).png' %}">
+        <div class="card-body">
+    <h5 class="card-title">Stock data analysis with pandas</h5>
+    <p class="card-text">I analysed data of stock prices with Beautiful soup , numpy and pandas.</p>
+    <a href="#" class="btn btn-primary">Check the code</a>
+  </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Screenshot (53).png' %}">
+        <div class="card-body">
+    <h5 class="card-title">Smile Detection</h5>
+    <p class="card-text">I created the model to detect smile in pictures, using SSD</p>
+    <a href="#" class="btn btn-primary">Check the code</a>
+  </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'img/Screenshot (53).png' %}">
+        <div class="card-body">
+    <h5 class="card-title">This website</h5>
+    <p class="card-text">I analysed data of stock prices with Beautiful soup , numpy and pandas.</p>
+    <a href="#" class="btn btn-primary">Check the code</a>
+  </div>
+    </div>
+</div>
+{% endblock %}

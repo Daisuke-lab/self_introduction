@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p1 style="margin-left: 20px">I will appreciate if you could give me any feedback to improve this website
+        or other my projects.</p1>
+<form action="/comment/save/" method="post">{% csrf_token %}
+    <div>
+<textarea name="comment" id="comments" placeholder="type here">
+</textarea>
+    </div>
+     <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Send
+    <i class="material-icons right">send</i>
+  </button>
+</form>
+{% endblock %}
+{% block sent %}
+{% endblock %}

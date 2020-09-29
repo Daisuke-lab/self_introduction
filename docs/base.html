@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daisuke</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+<div style="margin-bottom: 100px">
+<div id="navbar">
+    <a href="http://127.0.0.1:8000/">HOME</a>
+    <a href="http://127.0.0.1:8000/skill">SKILL</a>
+    <a href="http://127.0.0.1:8000/work">WORK</a>
+    <a href="http://127.0.0.1:8000/comment">COMMENT</a>
+</div>
+</div>
+{% block content %}
+<div style="text-align: center">
+    <h1 style="font-size: 40px">About me</h1><br>
+    <img class="picture" src="{% static 'img/20200221_165958765_iOS_resize.jpg' %}">
+    <p style="font-size: 20px">Name:Daisuke Kikuchi
+    <br>University:Yokohama National University
+        <br>Degree:Economics<br>
+        Email:kikuchi-daisuke-mb@ynu.jp
+    </p>
+    <h2>Education</h2>
+    <p2>2018-4 -
+    2022-3 Yokohama National University Economics</p2>
+    <ul>
+        <li>Statistics</li>
+        <li>Econometrics</li>
+        <li>Game Theory</li>
+    </ul>
+    2019-9 - 2020-6 The University of Edinburgh(exchange)
+    <ul>
+        <li>Statistics method for economics</li>
+        <li>Experimental Economics</li>
+        <li>Global Economics</li>
+    </ul>
+<h2>Curiosity</h2>
+    <div class="content">
+<p1>I am really curious about data science and machine learning. Especially, I have been
+    learning image classification and object detection. You can see my
+personal projects about AI in github. As well as this, I recently started learning front end. This website
+is my first attempt on front end. I would appreciate that if you could be interested in me and contact me by email.
+    Thank you.
+</p1>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
