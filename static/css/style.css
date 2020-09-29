@@ -1,0 +1,163 @@
+h2 {margin-top: 50px}
+
+h3 {text-align: center;
+margin-bottom:50px;
+font-size: 50px}
+
+.content {margin-left: 300px;
+margin-right: 300px}
+ul {
+    list-style-type: none;
+}
+
+.picture {width: 250px;
+height: 250px;
+border-radius: 50%;
+margin-bottom: 50px;}
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s;
+  z-index: 1;/* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#navbar a:hover {
+  color: aqua;
+}
+
+
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.aqua .circle {
+  stroke: aqua;
+}
+
+.circular-chart.aquamarine .circle {
+  stroke: aquamarine;
+}
+
+.circular-chart.lightseagreen .circle {
+  stroke: lightseagreen;
+}
+
+.circular-chart.deepskyblue .circle {
+  stroke: deepskyblue;
+}
+
+.circular-chart.pink1 .circle {
+  stroke: pink;
+}
+
+.circular-chart.hotpink .circle {
+  stroke: hotpink;
+}
+
+
+.skill {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.percentage {
+    font-size: 7px;
+    fill: #666;
+  font-family: sans-serif}
+
+
+
+.skill2 {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.34em;
+  text-anchor: middle;
+}
+
+.skill3 {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.40em;
+  text-anchor: middle;
+}
+
+
+#comments {width:700px;
+height:300px;
+font-size: 25px;
+margin-left: 20px}
+
+#submit {margin-left: 620px}
+
+
+
+.container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  height: 400px; /* Your height here */
+  width: 20px;
+  flex-basis: auto;
+  margin: 1.0em;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.card-image {
+    height: 250px; /* Your height here */
+    overflow: hidden;
+}
